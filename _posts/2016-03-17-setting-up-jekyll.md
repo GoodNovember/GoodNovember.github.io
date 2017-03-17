@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Slogging like a Slacker.
-categories: demo short sweet
+categories: demonstration
 tags: tiny small little
 ---
 
