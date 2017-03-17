@@ -1,5 +1,21 @@
 {% include header.html %}
 
-{{ content }}
+<article>{{content}}</article>
+
+<section class="meta">
+	Word Count: {{ page.content | number_of_words }}
+</section>
+
+<section class="tags">
+	{% for tag in page.tags %}
+	<a href="{{site.github.url}}/tags/#{{tag}}">{{tag}}</a>
+	{% endfor %}
+</section>
+
+<section class="categories">
+	{% for category in page.categories %}
+	<a href="{{site.github.url}}/categories/#{{category}}">{{category}}</a>
+	{% endfor %}
+</section>
 
 {% include footer.html %}

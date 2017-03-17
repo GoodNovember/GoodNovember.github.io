@@ -1,0 +1,37 @@
+---
+title: Categories
+---
+
+{% assign rawcats = "" %}
+{% for post in site.posts %}
+	{% assign tcats = post.categories | join:'|' | append:'|' %}
+	{% assign rawcats = rawcats | append:tcats %}
+{% endfor %}
+{% assign rawcats = rawcats | split:'|' | sort %}
+
+{% comment %}
+=======================
+The following part removes dulpicated cats and invalid cats like blank cat.
+=======================
+{% endcomment %}
+{% assign cats = "" %}
+{% for cat in rawcats %}
+	{% if cat != "" %}
+		{% if cats == "" %}
+			{% assign cats = cat | split:'|' %}
+		{% endif %}
+		{% unless cats contains cat %}
+			{% assign cats = cats | join:'|' | append:'|' | append:cat | split:'|' %}
+		{% endunless %}
+	{% endif %}
+{% endfor %}
+
+{% for bag in cats %}
+
+<div>
+	<h4 id="{{bag}}">{{bag}} ({{site.categories[bag].size}})</h4>
+	{% for post in site.categories[bag] %}
+	<div><a href="{{post.url | prepend: site.github.url}}">{{post.title}}</a></div>
+	{% endfor %}
+</div>
+{% endfor %}
