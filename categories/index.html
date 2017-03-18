@@ -1,5 +1,6 @@
 ---
 title: Categories
+parent: blog
 ---
 
 {% assign rawcats = "" %}
@@ -26,12 +27,13 @@ The following part removes dulpicated cats and invalid cats like blank cat.
 	{% endif %}
 {% endfor %}
 
-{% for bag in cats %}
+<h1>Categories</h1>
 
-<div>
-	<h4 id="{{bag}}">{{bag}} ({{site.categories[bag].size}})</h4>
+{% for bag in cats %}
+<div class="category">
+	<h4 class="name" id="{{bag}}">{{bag}} ({{site.categories[bag].size}})</h4>
 	{% for post in site.categories[bag] %}
-	<div><a href="{{post.url | prepend: site.github.url}}">{{post.title}}</a></div>
+	<div class="link"><a href="{{post.url | prepend: site.github.url}}">{{post.title}}</a></div>
 	{% endfor %}
 </div>
 {% endfor %}

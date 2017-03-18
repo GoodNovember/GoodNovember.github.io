@@ -1,21 +1,52 @@
+---
+type: post
+---
+
 {% include header.html %}
 
 <article>{{content}}</article>
 
 <section class="meta">
-	Word Count: {{ page.content | number_of_words }}
+	<div><span class="label">Word Count: </span><span>{{ page.content | number_of_words }}</span></div>
+	<div><span class="label">Date: </span><span>{{ page.date | date_to_long_string }}</span></div>
 </section>
 
-<section class="tags">
-	{% for tag in page.tags %}
-	<a href="{{site.github.url}}/tags/#{{tag}}">{{tag}}</a>
-	{% endfor %}
-</section>
+{% if page.categories.size > 0 %}
+	<section class="categories some">
+		<span class="label">
+		{% if page.categories.size == 1 %}
+		Category:
+		{% else %}
+		Categories:
+		{% endif %}
+		</>
+		{% for category in page.categories %}
+		<a href="{{site.github.url}}/categories/#{{category}}" class="category">{{category}}</a>
+		{% endfor %}
+	</section>
+	{% else %}
+	<section class="categories none">
+		This post is not filed in any categories.
+	</section>
+{% endif %}
 
-<section class="categories">
-	{% for category in page.categories %}
-	<a href="{{site.github.url}}/categories/#{{category}}">{{category}}</a>
-	{% endfor %}
-</section>
+{% if page.tags.size > 0 %}
+	<section class="tags some">
+		<span class="label">
+		{% if page.tags.size == 1 %}
+		Tag:
+		{% else %}
+		Tags:
+		{% endif %}
+		</span>
+		{% for tag in page.tags %}
+		<a href="{{site.github.url}}/tags/#{{tag}}" class="tag">{{tag}}</a>
+		{% endfor %}
+	</section>
+	{% else %}
+	<section class="tags none">
+		This post does not have any tags.
+	</section>
+{% endif %}
 
 {% include footer.html %}

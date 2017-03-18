@@ -1,0 +1,14 @@
+---
+layout: null
+---
+
+[
+{% for page in site.pages %}
+	{
+		"title"		: "{{ page.title }}",
+		"url"		: "{{ page.url }}",
+		"date"		: "{{ page.date | date: "%B %d, %Y" }}",
+		"content"	: "{{ page.content | escape | strip_newlines }}"
+	} {% if forloop.last %}{% else %},{% endif %}
+{% endfor %}
+]

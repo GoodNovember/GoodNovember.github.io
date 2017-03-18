@@ -1,0 +1,80 @@
+[
+
+	{
+		"title"		: "",
+		"url"		: "/api/data.json",
+		"date"		: "",
+		"content"	: "[	[&quot;thinker&quot;,[{&quot;name&quot;:&quot;Victor Lawrence&quot;,&quot;currentLocation&quot;:&quot;New Haven, Connecticut&quot;,&quot;phone&quot;:&quot;2 - (222) 222 - 2222&quot;,&quot;timeZone&quot;:&quot;Eastern Standard&quot;,&quot;carColor&quot;:&quot;green&quot;,&quot;zipCode&quot;:&quot;06511&quot;}]]]"
+	} ,
+
+	{
+		"title"		: "Categories",
+		"url"		: "/categories/",
+		"date"		: "",
+		"content"	: "&lt;h1&gt;Categories&lt;/h1&gt;&lt;div class=&quot;category&quot;&gt;	&lt;h4 class=&quot;name&quot; id=&quot;demonstration&quot;&gt;demonstration (2)&lt;/h4&gt;		&lt;div class=&quot;link&quot;&gt;&lt;a href=&quot;/demonstration/2016/03/17/setting-up-jekyll.html&quot;&gt;Slogging like a Slacker.&lt;/a&gt;&lt;/div&gt;		&lt;div class=&quot;link&quot;&gt;&lt;a href=&quot;/demonstration/2016/03/17/markdown-test.html&quot;&gt;Markdown Tests.&lt;/a&gt;&lt;/div&gt;	&lt;/div&gt;"
+	} ,
+
+	{
+		"title"		: "blog",
+		"url"		: "/",
+		"date"		: "",
+		"content"	: "	&lt;h3&gt;&lt;a href=&quot;/demonstration/2016/03/17/setting-up-jekyll.html&quot;&gt;Slogging like a Slacker.&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;small&gt;&lt;strong&gt;March 17, 2016&lt;/strong&gt; . demonstration.&lt;/small&gt;&lt;/p&gt;	&lt;h3&gt;&lt;a href=&quot;/demonstration/2016/03/17/markdown-test.html&quot;&gt;Markdown Tests.&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;small&gt;&lt;strong&gt;March 17, 2016&lt;/strong&gt; . demonstration.&lt;/small&gt;&lt;/p&gt;	&lt;h3&gt;&lt;a href=&quot;/2016/03/17/markdown-as-github-likes-it.html&quot;&gt;Markdown, as Github likes it.&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;small&gt;&lt;strong&gt;March 17, 2016&lt;/strong&gt; . .&lt;/small&gt;&lt;/p&gt;	"
+	} ,
+
+	{
+		"title"		: "Tags",
+		"url"		: "/tags/",
+		"date"		: "",
+		"content"	: "&lt;h1&gt;Tags&lt;/h1&gt;&lt;div class=&quot;tag&quot;&gt;	&lt;h4 id=&quot;little&quot; class=&quot;name&quot;&gt;little (1)&lt;/h4&gt;		&lt;div class=&quot;link&quot;&gt;&lt;a href=&quot;/demonstration/2016/03/17/setting-up-jekyll.html&quot;&gt;Slogging like a Slacker.&lt;/a&gt;&lt;/div&gt;	&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;	&lt;h4 id=&quot;long&quot; class=&quot;name&quot;&gt;long (1)&lt;/h4&gt;		&lt;div class=&quot;link&quot;&gt;&lt;a href=&quot;/demonstration/2016/03/17/markdown-test.html&quot;&gt;Markdown Tests.&lt;/a&gt;&lt;/div&gt;	&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;	&lt;h4 id=&quot;small&quot; class=&quot;name&quot;&gt;small (1)&lt;/h4&gt;		&lt;div class=&quot;link&quot;&gt;&lt;a href=&quot;/demonstration/2016/03/17/setting-up-jekyll.html&quot;&gt;Slogging like a Slacker.&lt;/a&gt;&lt;/div&gt;	&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;	&lt;h4 id=&quot;tiny&quot; class=&quot;name&quot;&gt;tiny (1)&lt;/h4&gt;		&lt;div class=&quot;link&quot;&gt;&lt;a href=&quot;/demonstration/2016/03/17/setting-up-jekyll.html&quot;&gt;Slogging like a Slacker.&lt;/a&gt;&lt;/div&gt;	&lt;/div&gt;"
+	} ,
+
+	{
+		"title"		: "projects",
+		"url"		: "/projects/",
+		"date"		: "",
+		"content"	: "&lt;h1&gt;Projects&lt;/h1&gt;"
+	} ,
+
+	{
+		"title"		: "about",
+		"url"		: "/about/",
+		"date"		: "",
+		"content"	: "&lt;h1&gt;About&lt;/h1&gt;&lt;h2&gt;Hello, my name is Victor Lawrence.&lt;/h2&gt;"
+	} ,
+
+	{
+		"title"		: "contact",
+		"url"		: "/contact/",
+		"date"		: "",
+		"content"	: "&lt;h1&gt;Contact&lt;/h1&gt;"
+	} ,
+
+	{
+		"title"		: "",
+		"url"		: "/css/main.css",
+		"date"		: "",
+		"content"	: ".category, .tag { background: floralwhite; }* { box-sizing: border-box; }body { background-color: #371437; margin: 0; display: flex; flex-direction: row; }header { min-height: 32px; background: green; border-bottom: 1px solid; width: 100%; display: flex; text-align: center; justify-content: center; align-items: center; }header a { text-decoration: none; }footer { min-height: 200px; background: yellow; display: flex; margin: 0; padding: 0; width: 100%; border-top: 1px solid; }main { flex-grow: 1; display: flex; flex-direction: column; align-items: center; overflow: auto; height: 100vh; }main article { flex-grow: 1; }main article, main section { border-right: 1px solid black; border-left: 1px solid black; max-width: 720px; padding: 0 1em; width: 100%; background-color: #dbc7ad; color: #3b0053; }main article ul, main article pre, main section ul, main section pre { overflow: auto; }main article hr, main section hr { border: none; border-top: 1px solid; }main article kbd, main article pre, main section kbd, main section pre { background: rgba(0, 0, 0, 0.15); padding: .75em .75em; border-radius: 0.5em; }main article table, main section table { border: 1px solid; overflow: auto; }main article table th, main section table th { background: pink; }main article table td, main article table th, main section table td, main section table th { border: 1px solid; }main article pre, main section pre { color: white; }main section.default { flex-grow: 1; width: 100%; }main section:not(:empty) { padding-bottom: 1em; }body &gt; nav { background: darkorange; width: 96px; display: flex; flex-direction: column; border-right: 1px solid; align-items: center; }body &gt; nav a { min-height: 96px; width: 100%; text-decoration: none; display: flex; flex-direction: column; justify-content: center; align-items: center; color: black; }body &gt; nav a .fa { font-size: 2em; text-decoration: none; }body &gt; nav a:hover { background: #0073ff; color: darkorange; }body &gt; nav a.active { background-color: #ffe8cc; color: darkorange; }body &gt; nav a.active:hover { background: white; }header.in-body { display: none; }@media only screen and (max-width: 840px) { body { flex-wrap: wrap; }  header.in-body { display: flex; }  main { height: auto; min-height: 100vh; max-width: 100%; overflow: unset; }  header.in-main { display: none; } }@media only screen and (max-width: 834px) { body &gt; nav { width: 100%; flex-direction: row; justify-content: space-around; border-bottom: 1px solid; border-right: none; } }@media only screen and (max-width: 736px) { main { max-width: 100%; }  main article, main section { border: none; } }"
+	} ,
+
+	{
+		"title"		: "",
+		"url"		: "/api/pages.json",
+		"date"		: "",
+		"content"	: "[{% for page in site.pages %}	{		&quot;title&quot;		: &quot;{{ page.title }}&quot;,		&quot;url&quot;		: &quot;{{ page.url }}&quot;,		&quot;date&quot;		: &quot;{{ page.date | date: &quot;%B %d, %Y&quot; }}&quot;,		&quot;content&quot;	: &quot;{{ page.content | escape | strip_newlines }}&quot;	} {% if forloop.last %}{% else %},{% endif %}{% endfor %}]"
+	} ,
+
+	{
+		"title"		: "",
+		"url"		: "/api/posts.json",
+		"date"		: "",
+		"content"	: "[{% for post in site.posts %}	{		&quot;title&quot;		: &quot;{{ post.title }}&quot;,		&quot;url&quot;		: &quot;{{ post.url }}&quot;,		&quot;date&quot;		: &quot;{{ post.date | date: &quot;%B %d, %Y&quot; }}&quot;,		&quot;content&quot;	: {{ post.content | jsonify | strip_newlines }},		&quot;tags&quot;		: {{ post.tags | jsonify }},		&quot;categories&quot;: {{ post.categories | jsonify }}	}{% if forloop.last %}{% else %},{% endif %}{% endfor %}]"
+	} ,
+
+	{
+		"title"		: "",
+		"url"		: "/api/site.json",
+		"date"		: "",
+		"content"	: "[{{% for prop in site %}	&quot;{{prop}}&quot;:{{ site[prop] | jsonify }}{% if forloop.last %}{% else %},{% endif %}{% endfor %}}]"
+	} 
+
+]

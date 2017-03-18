@@ -1,6 +1,7 @@
 ---
 title: Markdown Tests.
 tags: long
+layout: post
 categories: demonstration
 ---
 Welcome to StackEdit!
@@ -177,6 +178,21 @@ var bar = 0;
 
 > - about **Prettify** syntax highlighting [here][5],
 > - about **Highlight.js** syntax highlighting [here][6].
+
+
+### Victor Code Block
+
+```javascript
+// we don't really know yet.
+function infiniteLoop(timestamp){
+
+  var dog = "spin";
+
+  console.log("BLIP", timestamp, dog);
+
+  requestAnimationFrame(infiniteLoop);
+} infiniteLoop();
+```
 
 
 ### Footnotes

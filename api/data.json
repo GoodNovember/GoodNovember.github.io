@@ -1,0 +1,11 @@
+---
+layout: null
+---
+
+[
+	
+{% for page in site.data %}
+{{page | jsonify}}
+{% if forloop.last %}{% else %},{% endif %}
+{% endfor %}
+]

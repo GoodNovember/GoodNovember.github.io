@@ -1,0 +1,9 @@
+---
+layout: null
+---
+
+[{
+{% for prop in site %}
+	"{{prop}}":{{ site[prop] | jsonify }}{% if forloop.last %}{% else %},{% endif %}
+{% endfor %}
+}]
