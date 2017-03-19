@@ -33,13 +33,15 @@ The following part removes dulpicated tags and invalid tags like blank tag.
 	{% endif %}
 {% endfor %}
 
-<h1>Tags</h1>
+<h1>Blog Posts By Tag</h1>
 
 {% for bag in tags %}
 <div class="tag">
-	<h4 id="{{bag}}" class="name">{{bag}} ({{site.tags[bag].size}})</h4>
+	<h4 id="{{bag}}" class="name">{{bag | upcase}} ({{site.tags[bag].size}})</h4>
 	{% for post in site.tags[bag] %}
-	<div class="link"><a href="{{post.url | prepend: site.github.url}}">{{post.title}}</a></div>
+	<ul>
+		<li class="link"><a href="{{post.url | prepend: site.github.url}}">{{post.title}}</a></li>
+	</ul>
 	{% endfor %}
 </div>
 {% endfor %}

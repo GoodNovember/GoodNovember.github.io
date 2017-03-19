@@ -19,22 +19,34 @@
 		}
 	</style>
 	<!--<link rel="stylesheet" href="{{site.github.url}}/css/highlight-cheerfully-dark.css">-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Vesper+Libre" rel="stylesheet">
 	<link rel="stylesheet" href="{{site.github.url}}/css/highlight-tomorrow-dark.css">
 	<link rel="stylesheet" href="{{site.github.url}}/css/font-awesome.min.css">
 	<link rel="stylesheet" href="{{site.github.url}}/css/main.css">
 </head>
 <body>
+	<a name="top-of-the-page"></a>
 	<header class="in-body">
 		<a href="{{site.github.url}}/">Victor Lawrence {{layout.title}}</span></a>
 	</header>
 	<nav>
+		<a 
+			{% if page.title == "home" %}
+				class="active"
+			{% else %}
+				class="inactive" 
+			{% endif %}
+			href="{{site.github.url}}/">
+			<span class="fa fa-home"></span>
+			<span>Home</span>
+		</a>
 		<a 
 			{% if page.title == "blog" or page.parent == "blog" or layout.type == "post" %}
 				class="active"
 			{% else %}
 				class="inactive" 
 			{% endif %}
-			href="{{site.github.url}}/">
+			href="{{site.github.url}}/blog">
 			<span class="fa fa-book"></span>
 			<span>Blog</span>
 		</a>
@@ -74,3 +86,4 @@
 		<header class="in-main">
 			<a href="{{site.github.url}}/">Victor Lawrence</span></a>
 		</header>
+		<div class="secret-menu"><a href="#top-of-the-page"><span class="fa fa-arrow-up"></span></a></div>

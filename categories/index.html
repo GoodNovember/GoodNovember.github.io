@@ -27,13 +27,15 @@ The following part removes dulpicated cats and invalid cats like blank cat.
 	{% endif %}
 {% endfor %}
 
-<h1>Categories</h1>
+<h1>Blog Posts By Category</h1>
 
 {% for bag in cats %}
 <div class="category">
-	<h4 class="name" id="{{bag}}">{{bag}} ({{site.categories[bag].size}})</h4>
+	<h4 class="name" id="{{bag}}">{{bag | upcase}} ({{site.categories[bag].size}})</h4>
 	{% for post in site.categories[bag] %}
-	<div class="link"><a href="{{post.url | prepend: site.github.url}}">{{post.title}}</a></div>
+	<ul>
+		<li class="link"><a href="{{post.url | prepend: site.github.url}}">{{post.title}}</a> {{ post.date | date: "%B %e, %Y" }}</li>
+	</ul>
 	{% endfor %}
 </div>
 {% endfor %}

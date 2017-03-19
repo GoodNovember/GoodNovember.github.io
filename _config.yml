@@ -11,3 +11,4 @@ kramdown:
 gems:
   - jekyll-coffeescript
   - jekyll-paginate
+permalink: /blog/:categories/:year/:month/:day/:title
